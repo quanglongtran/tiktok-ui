@@ -4,7 +4,7 @@
 :root {
     --primary: #fe2c55;
     --black: #000;
-    --text-color: #333;
+    --text-color: #161823;
     --white-color: #fff;
 
     // default layout
@@ -40,4 +40,28 @@ input,
 a {
     color: var(--text-color);
     text-decoration: none;
+}
+
+body {
+    .tippy-box {
+        background-color: #545454;
+        opacity: 0.92;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+
+    .tippy-arrow {
+        background-color: #545454;
+        opacity: 0.92;
+    }
+
+    .tippy-content {
+        padding: 8px 9px;
+    }
+
+    .tippy-box[data-placement^='bottom'] > .tippy-arrow::before {
+        top: -8px;
+    }
 }
